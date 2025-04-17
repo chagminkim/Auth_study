@@ -1,6 +1,6 @@
 package study.auth_study.member.dto;
 
-public class ListResponseDto {
+public class MemberListResponseDto {
 
     private Long id;
 
@@ -8,7 +8,7 @@ public class ListResponseDto {
 
     private String name;
 
-    public ListResponseDto(Long id, String email, String name) {
+    public MemberListResponseDto(Long id, String email, String name) {
         this.id = id;
         this.email = email;
         this.name = name;

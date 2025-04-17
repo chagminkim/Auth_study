@@ -13,10 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class MemberService {
 
     private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     public MemberInfoResponse createMember(MemberCreateRequest request) {
         if (memberRepository.existsByEmail(request.getEmail())) {

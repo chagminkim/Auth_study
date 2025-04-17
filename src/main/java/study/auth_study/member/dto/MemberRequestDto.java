@@ -1,6 +1,6 @@
 package study.auth_study.member.dto;
 
-public class RequestDto {
+public class MemberRequestDto {
 
     private String email;
 

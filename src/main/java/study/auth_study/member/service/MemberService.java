@@ -1,6 +1,5 @@
 package study.auth_study.member.service;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import study.auth_study.member.dto.MemberCreateRequest;
 import study.auth_study.member.dto.MemberInfoResponse;

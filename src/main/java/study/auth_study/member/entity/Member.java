@@ -1,8 +1,10 @@
 package study.auth_study.member.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 @Entity
+@Getter
 public class Member {
 
     @Id
@@ -14,18 +16,17 @@ public class Member {
     private String email;
 
     @Column(length = 1024)
-
     private String password;
 
     public Member() {
     }
-
-    public Member(Long id, String name, String email, String password) {
-
+    public Member(String name, String email, String password) {
         this.email = email;
-
         this.name = name;
-
+        this.password = password;
+    }
+    public void update(String name, String password) {
+        this.name = name;
         this.password = password;
     }
 }
